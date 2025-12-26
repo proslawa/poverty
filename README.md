@@ -1,39 +1,106 @@
-## DEVELOPPEMENT DE PACKAGE AVEC R PAR PROSPER LAWA FOUMSOU ET SAMBA DIENG
-# 📦 poverty
+# poverty — Package R pour l’analyse de la pauvreté et des inégalités
 
-**poverty** est un projet de développement de package visant à calculer des indicateurs de pauvreté et d'inégalité et d'évaluer des impacts de politique de transferts monétaires contre la pauvreté. Il permet de générer des tableaux et des graphiques automatiquement, exportés dans un fichier Excel structuré par feuille, afin de faciliter l'analyse socio-économique.
+## 📖 Présentation
 
-## 🚀 Objectifs du package
+**poverty** est un package R dédié à l’analyse quantitative de la pauvreté et des inégalités, ainsi qu’à l’évaluation de l’impact des politiques de transferts monétaires.  
+Il automatise le calcul des principaux indicateurs socio-économiques et génère des **tableaux et graphiques prêts à l’emploi**, exportés dans des **fichiers Excel structurés par feuille**.
 
-- Automatiser le calcul d’indicateurs de pauvreté et d’inégalités.
-- Evaluer les impacts de transferts monétaires sur la réduction de la pauvreté et des inégalités.
-- Générer des tableaux statistiques et graphiques exploitables directement.
-- Offrir des fonctions généralisées pour l’analyse par sous-groupes (sexe, région, milieu, etc.).
-
-
-## 📚 Fonctions principales (en cours de développement)
-
-- `population_distribution` : Décrit la répartition de la population selon une variable.
-- `poverty_summary` : Calcule les indicateurs de pauvreté (headcount, gap, squared gap) ainsi que la répartition de la pauvreté.
-- `inequality_indices` : Produit des indices d’inégalités (Lorenz, Gini, Theil).
-- `transfers_summary` : Évalue l’impact de transferts monétaires sur la pauvreté et les inégalités.
-- `generate_full_report` : Génère un rapport complet Excel avec toutes les analyses.
-Ces fonctions sont associées à différentes fonctions de représentation graphique.
-
-Chaque fonction produit un tableau R structuré et l’exporte dans un fichier Excel avec une feuille dédiée.
-
-## ⚙️ Caractéristiques techniques
-
-- Données d'entrée : bases de données propres et harmonisées ou d'autres bases qui ont des variables socio-économiques( au minimum les variables de consommation ou de dépenses, la variable de poids et la variable de seuil de pauvreté).
-- Exports : fichiers Excel multi-feuilles (via `openxlsx`).
-- Analyse par groupe possible via l’argument `separateur` (ex. sexe, région, milieu de résidence, etc.).
-
-## 📌 Statut
-
-🔧 Fonctions en cours de développement et de test  
-📦 Packaging prévu une fois les fonctions stabilisées
-
-
+Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ONG** travaillant sur les politiques de lutte contre la pauvreté.
 
 ---
 
+## 🎯 Objectifs du package
+
+- Automatiser le calcul des indicateurs standards de pauvreté et d’inégalités  
+- Évaluer l’impact des **transferts monétaires** sur la pauvreté et la distribution du bien-être  
+- Générer automatiquement des **tableaux statistiques** et des **visualisations**  
+- Faciliter l’analyse **par sous-groupes** (sexe, région, milieu de résidence, etc.)  
+- Produire des résultats exploitables directement dans **Excel**
+
+---
+
+## 🧩 Fonctions principales
+
+### 🔹 Analyse descriptive de la population
+- **`population_distribution()`**  
+  Analyse la répartition de la population selon une ou plusieurs variables (sexe, âge, région, etc.).
+
+---
+
+### 🔹 Analyse de la pauvreté
+- **`poverty_summary()`**  
+  Calcule les indicateurs de pauvreté :
+  - Taux de pauvreté (*Headcount Ratio*)
+  - Écart de pauvreté (*Poverty Gap*)
+  - Sévérité de la pauvreté (*Squared Poverty Gap*)
+  - Répartition de la pauvreté par groupe
+
+---
+
+### 🔹 Analyse des inégalités
+- **`inequality_indices()`**  
+  Produit les principaux indicateurs d’inégalités :
+  - Courbe de Lorenz
+  - Indice de Gini
+  - Indice de Theil
+
+---
+
+### 🔹 Simulation de politiques publiques
+- **`transfers_summary()`**  
+  Évalue l’impact de transferts monétaires sur :
+  - La réduction de la pauvreté
+  - Les changements dans les inégalités
+
+---
+
+### 🔹 Rapport automatique
+- **`generate_full_report()`**  
+  Génère un **rapport Excel complet** regroupant :
+  - Les tableaux statistiques
+  - Les graphiques
+  - Les analyses par sous-groupes
+
+---
+
+## 📊 Sorties et visualisations
+
+- Chaque fonction :
+  - Retourne un **objet R structuré**
+  - Génère des **tableaux formatés**
+  - Produit des **graphiques** associés
+- Les résultats sont exportés dans un **fichier Excel multi-feuilles**, avec :
+  - Une feuille par analyse
+  - Une structure standardisée facilitant l’interprétation
+
+---
+
+## ⚙️ Caractéristiques techniques
+
+- **Données d’entrée requises** :
+  - Variable de consommation ou de dépenses
+  - Variable de poids
+  - Variable de seuil de pauvreté
+- **Analyse par sous-groupes** :
+  - Via l’argument `separateur` (sexe, région, milieu, etc.)
+- **Formats d’export** :
+  - Excel (`openxlsx`)
+- **Compatibilité** :
+  - Bases EHCVM et autres enquêtes socio-économiques harmonisées
+
+---
+
+## 📌 Statut du projet
+
+- 🔧 Fonctions en cours de développement et de validation  
+- 🧪 Tests progressifs sur données réelles  
+- 📦 Packaging CRAN prévu après stabilisation des fonctions
+
+---
+
+## 🛠️ Perspectives
+
+- Ajout de nouvelles simulations de politiques publiques  
+- Extension aux analyses dynamiques et comparaisons temporelles  
+- Intégration d’exports graphiques avancés  
+- Documentation et vignettes détaillées
