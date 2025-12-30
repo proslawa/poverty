@@ -7,7 +7,6 @@ Il automatise le calcul des principaux indicateurs socio-économiques et génèr
 
 Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ONG** travaillant sur les politiques de lutte contre la pauvreté.
 
----
 
 ## 🎯 Objectifs du package
 
@@ -17,7 +16,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
 - Faciliter l’analyse **par sous-groupes** (sexe, région, milieu de résidence, etc.)  
 - Produire des résultats exploitables directement dans **Excel**
 
----
 
 ## 🧩 Fonctions principales
 
@@ -25,7 +23,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
 - **`population_distribution()`**  
   Analyse la répartition de la population selon une ou plusieurs variables (sexe, âge, région, etc.).
 
----
 
 ### 🔹 Analyse de la pauvreté
 - **`poverty_summary()`**  
@@ -35,7 +32,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
   - Sévérité de la pauvreté (*Squared Poverty Gap*)
   - Répartition de la pauvreté par groupe
 
----
 
 ### 🔹 Analyse des inégalités
 - **`inequality_indices()`**  
@@ -44,7 +40,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
   - Indice de Gini
   - Indice de Theil
 
----
 
 ### 🔹 Simulation de politiques publiques
 - **`transfers_summary()`**  
@@ -52,7 +47,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
   - La réduction de la pauvreté
   - Les changements dans les inégalités
 
----
 
 ### 🔹 Rapport automatique
 - **`generate_full_report()`**  
@@ -61,7 +55,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
   - Les graphiques
   - Les analyses par sous-groupes
 
----
 
 ## 📊 Sorties et visualisations
 
@@ -73,7 +66,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
   - Une feuille par analyse
   - Une structure standardisée facilitant l’interprétation
 
----
 
 ## ⚙️ Caractéristiques techniques
 
@@ -88,7 +80,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
 - **Compatibilité** :
   - Bases EHCVM et autres enquêtes socio-économiques harmonisées
 
----
 
 ## 📌 Statut du projet
 
@@ -96,7 +87,6 @@ Ce package s’adresse aux **analystes, chercheurs, institutions publiques et ON
 - 🧪 Tests progressifs sur données réelles  
 - 📦 Packaging CRAN prévu après stabilisation des fonctions
 
----
 
 ## 🛠️ Perspectives
 
